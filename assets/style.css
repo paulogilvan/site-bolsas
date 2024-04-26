@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo a {
+    font-size: 36px;
+    color: rgb(102, 66, 11);
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+header.scrolling {
+    background-color: #FFF;
+    padding: 20px;
+}
+
+header .container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(102, 66, 11);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid rgb(44, 29, 5);
+}
+header nav .menu {
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+header nav .menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+header nav .menu-icon div {
+    height: 6px;
+    background-color: rgb(44, 29, 5);
+}
+
+.banner {
+    background-image: url(./images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+section .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 550px;   
+    
+}
+section .banner-text h1 {
+    font-size: 2rem;
+    margin-right: 340px;
+    color: rgb(102, 66, 11);
+    
+}
+section .banner-text p {
+    width: 350px;
+    font-size: 1rem;
+    margin-right: 245px;
+    color: rgb(102, 66, 11);
+    font-weight: 500;
+    padding-top: 10px;
+}   
+section .banner-text .button {
+    margin-right: 395px;
+    margin-top: 30px;
+    border: 1px solid rgb(102, 66, 11);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+} 
+section .banner-text .button:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+
+/* SECTION RECENT*/
+section {
+    background-color: #EEE;    
+}
+section .container {   
+   max-width: 1280px;
+   margin: auto;  
+   display: flex;
+   flex-direction: column; 
+   padding-bottom: 90px;
+}
+section .recent {
+    flex: 1;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+section .recent h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+}
+section .recent a {
+    border: 1px solid rgb(102, 66, 11);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section .recent a:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+section .card {    
+    display: flex;    
+    justify-content: space-between;    
+    width: 100%;
+    margin-top: 50px;
+}
+section .product img {
+    height: 300px;
+}
+section .product h3 {
+    font-size: 15px;
+    color: rgb(102, 66, 11);
+    margin-top: 10px;
+}
+section .product p {
+    font-size: 10px;
+    color: rgb(102, 66, 11);    
+}
+
+/* SECTION COLEÇÃO */
+#colecao {
+    background-color: #FFF;
+}
+
+#colecao .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+#colecao .wrapper .item-left {
+    height: 800px;
+    width: 500px;
+    background-color: rgb(102, 66, 11); 
+}
+#colecao .wrapper .item-left .img {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#colecao .wrapper .item-right h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(102, 66, 11);    
+    margin-right: 310px;
+    line-height: 70px;
+}
+#colecao .wrapper .item-right .risk {
+    width: 50px;
+    padding: 2px;
+    margin-top: 300px;
+    margin-left: 50px;
+    background-color: rgb(102, 66, 11);
+}
+#colecao .wrapper .item-right .itens-bottom {
+   padding-top: 280px;   
+   margin-left: 130px;
+}
+#colecao .wrapper .item-right p {
+   width: 160px;
+   color: rgb(102, 66, 11);
+   padding-bottom: 30px;
+}
+#colecao .wrapper .item-right .button {
+    border: 1px solid rgb(102, 66, 11);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#colecao .wrapper .item-right .button:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+
+/* SECTION COLEÇÕES */
+#colecoes .imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+#colecoes .imgs .img img {
+    font-size: 250px;    
+}
+#colecoes .imgs .img .item {
+    font-size: 30px;
+    margin-top: 10px;
+}
+#colecoes .imgs .img h3 {
+    font-size: 20px;
+    color: rgb(102, 66, 11);    
+}
+
+.banner2 {
+    background-image: url(./images/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    filter: brightness(.7);
+}
+section .areaText{
+    z-index: 99;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    padding-top: 70px;
+    filter: brightness(.9);
+}
+section .areaText h2 {
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #FFF;
+}
+section .areaText p {
+    margin-bottom: 70px;
+    font-size: 3rem;
+    color: #FFF;
+}
+section .areaText a {
+    border: 1px solid rgb(102, 66, 11);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section .areaText a:hover {
+    border: none;
+    text-decoration: underline;
+}
+
+#offer {
+    background-color: #EEE;
+}
+section .offerText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+section .offer h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+}
+section .offer a {
+    border: 1px solid rgb(102, 66, 11);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(102, 66, 11);
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section .offer a:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+section .offer-imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 80px;
+}
+section .offer-imgs .offer-img img {
+    width: 300px;
+    height: 400px;
+}
+section .offer-imgs .offer-img .text-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section .offer-imgs .offer-img .text-price h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+section .offer-imgs .offer-img .text-price p {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(102, 66, 11);
+}
+
+footer .wrapper {
+    background-color: rgb(53, 13, 117);
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .wrapper h3 {
+    padding-left: 20px;
+    font-size: 15px;
+}
+footer .wrapper .logo a {
+    font-size: 30px;
+    color: #FFF;
+}
+footer .wrapper .social img {
+    padding-right: 20px;
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    header .logo a {
+        font-size: 26px;
+    }
+    
+    header nav ul li a {
+        font-size: 15px;
+    }
+    
+    section .banner-text {
+        height: 650px;
+    }
+
+    section .recent h3 {
+        padding-left: 10px;
+    }
+    section .recent a {
+        margin-right: 10px;
+    }
+    section .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 30px;
+    }    
+    
+    #colecao .wrapper .item-left {
+        height: 700px;
+        width: 200px;
+        background-color: rgb(102, 66, 11); 
+        margin-left: 20px;
+    }
+    #colecao .wrapper .item-right h2 {
+        font-size: 3rem;
+        width: 50px;
+    }
+
+    #colecoes .imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);        
+    }
+    #colecoes .imgs .img img {
+        height: 400px;  
+        margin-left: 20px;
+    }
+    #colecoes .imgs .img .item {
+        font-size: 20px;
+    }
+    #colecoes .imgs .img h3 {
+        font-size: 20px;
+        color: rgb(102, 66, 11);    
+        margin-left: 20px;
+    }
+
+    section .offer-imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        
+    }
+    section .offer-imgs .offer-img .text-price h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    section .offer-imgs .offer-img .text-price p {
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(102, 66, 11);
+    }
+    
+}
+
+@media (max-width: 450px) {
+    header nav {
+        display: none;
+    }
+
+    header nav .menu {
+        display: flex;        
+    }
+
+    .banner {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    section .banner-text {
+        
+        width: 260px;
+        margin-left: 450px;
+    }
+    section .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    section .banner-text p {
+        width: 250px;
+        font-size: 10px;
+    }
+
+    section .banner-text .button {
+        margin-right: 300px;
+        width: 100px;
+        padding: 10px 20px;
+        font-size: 5px;
+    }
+}
